@@ -1,0 +1,39 @@
+
+import java.util.*;
+
+public class Countdown {
+    public static void main(String[] args) throws InterruptedException {
+        int time = Integer.parseInt(args[0]);
+        Queue<Integer> queue = new LinkedList<Integer>();
+
+        for (int i = time; i >= 0; i--)
+            queue.add(i);
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.remove());
+            Thread.sleep(1000);
+        }
+    }
+}
+
+
+static <E> List<E> heapSort(Collection<E> c) {
+    Queue<E> queue = new PriorityQueue<E>(c);
+    List<E> result = new ArrayList<E>();
+
+    while (!queue.isEmpty())
+        result.add(queue.remove());
+
+    return result;
+}
+
+Queue queueA = new LinkedList();
+
+queueA.add("element 1");
+queueA.add("element 2");
+queueA.add("element 3");
+
+Object firstElement = queueA.remove();
+
+Queue<MyObject> queue = new LinkedList<MyObject>();
+}
