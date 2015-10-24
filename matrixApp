@@ -1,0 +1,55 @@
+package Activity;
+
+public class MatrixApp {
+    public static void main(String args[]){
+        Matrix MatrixClass = new Matrix();
+        
+        Matrix matrix1= new Matrix();
+        Matrix matrix2 = new Matrix();
+        
+        System.out.println("matrix a");
+        matrix1.setCell(0,0,1);
+        matrix1.setCell(0,1,2);
+        matrix1.setCell(0,2,3);
+        matrix1.setCell(0,3,4);
+        matrix1.setCell(1,0,5);
+        matrix1.setCell(1,1,6);
+        matrix1.setCell(1,2,7);
+        matrix1.setCell(1,3,8);
+        matrix1.setCell(2,0,9);
+        matrix1.setCell(2,1,0);
+        matrix1.setCell(2,2,1);
+        matrix1.setCell(2,3,2);
+        matrix1.setCell(3,0,3);
+        matrix1.setCell(3,1,4);
+        matrix1.setCell(3,2,5);
+        matrix1.setCell(3,3,6);
+        matrix1.displayMatrix();
+        
+        System.out.println("-----------------------");
+        
+        System.out.println("matrix b");
+        matrix2.setCell(0,0,10);
+        matrix2 .setCell(0,1,21);
+        matrix2 .setCell(0,2,31);
+        matrix2 .setCell(0,3,41);
+        matrix2 .setCell(1,0,51);
+        matrix2 .setCell(1,1,61);
+        matrix2 .setCell(1,2,72);
+        matrix2 .setCell(1,3,81);
+        matrix2 .setCell(2,0,93);
+        matrix2 .setCell(2,1,4);
+        matrix2 .setCell(2,2,15);
+        matrix2 .setCell(2,3,21);
+        matrix2 .setCell(3,0,31);
+        matrix2 .setCell(3,1,41);
+        matrix2  .setCell(3,2,59);
+        matrix2 .setCell(3,3,65);
+        matrix2 .displayMatrix();
+        
+        System.out.println("-----------------------");
+        
+        MatrixClass.addMatrices(matrix1 , matrix2 );
+        MatrixClass.displayMatrix();
+    }
+} 
