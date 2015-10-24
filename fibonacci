@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class TestRecursion{
+	public static void main (String [] args){
+            int num;
+            Scanner jessa=new Scanner(System.in);
+            Recursion r = new Recursion();
+             System.out.println("Please enter a number:");
+             num=jessa.nextInt();
+             System.out.println("Result of recursion:");
+             
+             
+             r.factorial(num);
+             System.out.println(r.factorial(num));
+	
+              
+	}
+	
+
+	}
+
+
+
